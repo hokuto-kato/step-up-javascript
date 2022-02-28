@@ -21,10 +21,10 @@ module.exports = merge(common, {
 			new TerserPlugin({
 				terserOptions: {
 					format: {
-						comments: false,
+						comments: true,
 					},
 					compress: {
-						drop_console: true,
+						drop_console: false,
 					},
 				},
 				extractComments: false,
