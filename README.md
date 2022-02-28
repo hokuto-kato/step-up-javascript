@@ -1,3 +1,8 @@
+# 概要
+ステップアップJavaScript  
+https://books.circlearound.co.jp/step-up-javascript/  
+学習用レポジトリ。
+
 # node
 16.14.0
 
