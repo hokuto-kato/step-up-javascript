@@ -20,8 +20,8 @@ const replace = () => {
 	configFile.forEach(val => {
 		fs.readFile(val, "utf8", (err, data) => {
 			if (err) throw err
-			const result = data.replace(/const stepID = \d+/g,
-				`const stepID = ${process.argv[2]}`)
+			const result = data.replace(/const stepID = ".+"/g,
+				`const stepID = "${process.argv[2]}"`)
 
 			fs.writeFile(val, result, "utf8", function(err) {
 				if (err) return console.log(err)

@@ -6,8 +6,8 @@ files.forEach(val => {
 	if (!process.argv[2]) return console.log(`${red}IDが指定されていません`)
 	fs.readFile(val, "utf8", (err, data) => {
 		if (err) throw err
-		const result = data.replace(/const stepID = \d/g,
-			`const stepID = ${process.argv[2]}`)
+		const result = data.replace(/const stepID = ".+"/,
+			`const stepID = "${process.argv[2]}"`)
 
 		fs.writeFile(val, result, "utf8", function(err) {
 			if (err) return console.log(err)
