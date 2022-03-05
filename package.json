@@ -24,7 +24,6 @@
 	"dependencies": {
 		"@babel/core": "^7.16.7",
 		"@babel/preset-env": "^7.16.8",
-		"@glidejs/glide": "^3.5.2",
 		"@squoosh/cli": "^0.7.2",
 		"@squoosh/lib": "^0.4.0",
 		"autoprefixer": "^10.4.2",
