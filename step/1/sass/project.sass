@@ -1,18 +1,57 @@
 .display
-	width: 300px
-	padding: 20px
-	text-align: right
-	font-weight: bold
+	text-align: center
+	font-size: 25vh
+	font-family: 'JetBrains Mono', monospace
 .button
-	margin: 1rem auto 0
-	button
+	display: flex
+	justify-content: center
+	width: 100%
+	&__body
+		border: 2px solid #111
+		padding: 20px 50px
+		font-size: 1.8rem
+		height: 80px
+		width: 40vw
+		display: flex
+		align-items: center
+		justify-content: center
+		box-shadow: 1px 1px 0 #000
 		&:nth-child(2)
 			margin-left: 1rem
 .container
 	display: flex
 	flex-direction: column
 	align-items: center
-p
-	&:nth-of-type(n+2)
-		border-top: 1px solid #999
-		padding-top: 1rem
+	justify-content: center
+	width: 100vw
+	height: 70vh
+	background-color: #ffc20f
+	font-family: 'JetBrains Mono', monospace
+.console
+	background-color: #111
+	width: 100%
+	height: 30vh
+	position: fixed
+	bottom: 0
+	padding: 20px
+	overflow-y: scroll
+	&__title
+		font-size: 1.6rem
+		color: #111
+		background-color: #fff
+		padding: 10px
+		font-family: 'JetBrains Mono', monospace
+		display: inline-block
+	&__body
+		font-size: 1.6rem
+		color: #fff
+		font-family: 'JetBrains Mono', monospace
+		margin-top: 20px
+		display: flex
+		align-items: center
+		&:before
+			content: ">"
+			color: #C3E88D
+			margin-right: 10px
+		&:nth-of-type(n+2)
+			margin-top: 10px
