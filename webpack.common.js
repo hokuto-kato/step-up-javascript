@@ -7,7 +7,7 @@ const pug = globule.find("./src/pug/*.pug", {
 	ignore: ["./src/pug/include/*.pug"],
 })
 const svg = globule.find("./src/img/*.svg").length
-const stepID = "01"
+const stepID = "1"
 const buildPath = `${__dirname}/docs/${stepID}/`
 const yellow = "\u001b[33m"
 
@@ -53,6 +53,10 @@ const app = {
 						loader: "css-loader",
 					},
 				],
+			},
+			{
+				test: /\.pug$/i,
+				loader: "pug-loader",
 			},
 		],
 	},

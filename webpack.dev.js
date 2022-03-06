@@ -3,7 +3,7 @@ const common = require("./webpack.common")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const autoprefixer = require("autoprefixer")
 const TerserPlugin = require("terser-webpack-plugin")
-const stepID = "01"
+const stepID = "1"
 const buildPath = `${__dirname}/docs/${stepID}/`
 
 module.exports = merge(common, {
@@ -69,13 +69,6 @@ module.exports = merge(common, {
 				],
 			},
 			{
-				test: /\.js$/i,
-				loader: "babel-loader",
-				options: {
-					presets: ["@babel/preset-env"],
-				},
-			},
-			{
 				test: /\.css$/i,
 				use: [
 					{
@@ -85,13 +78,6 @@ module.exports = merge(common, {
 						loader: "css-loader",
 					},
 				],
-			},
-			{
-				test: /\.pug$/i,
-				loader: "pug-loader",
-				options: {
-					pretty: true,
-				},
 			},
 		],
 	},
