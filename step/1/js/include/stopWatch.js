@@ -5,11 +5,11 @@ const nowTime = document.querySelector("[data-history-now]")
 let countNum = 0
 let timer = null
 export default function (options) {
-	// options = options || {}
-	// const color = options.color || "lightblue"
-	// const backgroundColor = options.backgroundColor || "black"
-	// display.style.color = color
-	// display.style.backgroundColor = backgroundColor
+	options = options || {}
+	const color = options.color || "#111"
+	const backgroundColor = options.backgroundColor || "#ffc20f"
+	display.style.color = color
+	display.style.backgroundColor = backgroundColor
 
 	const getTime = () => {
 		const now = new Date()
