@@ -7,7 +7,7 @@ const pug = globule.find("./src/pug/*.pug", {
 	ignore: ["./src/pug/include/*.pug"],
 })
 const svg = globule.find("./src/img/*.svg").length
-const stepID = "2"
+const stepID = "3"
 const buildPath = `${__dirname}/docs/${stepID}/`
 const yellow = "\u001b[33m"
 

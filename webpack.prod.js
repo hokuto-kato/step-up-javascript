@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const autoprefixer = require("autoprefixer")
 const TerserPlugin = require("terser-webpack-plugin")
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
-const stepID = "2"
+const stepID = "3"
 const buildPath = `${__dirname}/docs/${stepID}/`
 
 module.exports = merge(common, {
