@@ -1,15 +1,17 @@
 import "../sass/app.sass"
-import json from "./include/json"
+import AreaSelector from "./include/areaSelector"
+import hello from "./include/hello"
 
 const jsonStr = JSON.stringify({
-	name: 'John',
+	name: "John",
 	age: 30,
-	interests: ['music', 'skiing']
-});
+	interests: ["music", "skiing"],
+})
 // console.log(jsonStr)
 const obj = JSON.parse(jsonStr)
 // console.log(obj.name)
-
-document.addEventListener('DOMContentLoaded', () => {
-	json()
+const rootElm = document.getElementById("areaSelector")
+document.addEventListener("DOMContentLoaded", () => {
+	new AreaSelector(rootElm)
+	hello()
 })
