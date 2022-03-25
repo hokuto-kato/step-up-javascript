@@ -40,5 +40,4 @@ export default function() {
 	const customObh2 = customObj1
 	customObj1.message = "Hi"
 	console.log(customObh2)
-
 }
